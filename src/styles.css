@@ -1,0 +1,86 @@
+:root {
+  font-family: monospace;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #000000;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* ====== ARK 主题颜色配置 ====== */
+  
+  /* 主色调 - 经典终端绿色系（荧光绿） */
+  --color-primary: #00ff00;           /* 主绿色（经典终端绿） */
+  --color-primary-light: #33ff33;     /* 浅绿色 */
+  --color-primary-dark: #00cc00;      /* 深绿色 */
+  --color-primary-muted: #00dd00;     /* 柔和绿 */
+  
+  /* 次要色调 */
+  --color-secondary: #00aa00;         /* 次级绿色 */
+  --color-tertiary: #004400;          /* 深暗绿 */
+  
+  /* 状态颜色 */
+  --color-warning: #ffff00;           /* 警告黄 */
+  --color-error: #ff3333;             /* 错误红 */
+  --color-success: var(--color-primary); /* 成功色（使用主绿色）*/
+  
+  /* 背景颜色 */
+  --color-bg-primary: #000000;        /* 主背景 */
+  --color-bg-secondary: rgba(0, 0, 0, 0.85); /* 次级背景 */
+  --color-bg-overlay: rgba(0, 0, 0, 0.5);    /* 遮罩背景 */
+  
+  /* 边框和分隔线 */
+  --color-border: var(--color-primary);           /* 主边框 */
+  --color-border-light: rgba(0, 255, 0, 0.3);   /* 浅边框 */
+  --color-border-lighter: rgba(0, 255, 0, 0.2); /* 更浅边框 */
+  
+  /* 光效和阴影 */
+  --glow-primary: rgba(0, 255, 0, 0.8);        /* 主发光 */
+  --glow-primary-soft: rgba(0, 255, 0, 0.5);   /* 柔和发光 */
+  --glow-primary-subtle: rgba(0, 255, 0, 0.3); /* 微弱发光 */
+  --shadow-primary: 0 0 15px rgba(0, 255, 0, 0.3); /* 主阴影 */
+  
+  /* 渐变背景 */
+  --gradient-header: linear-gradient(180deg, rgba(0, 255, 0, 0.1) 0%, rgba(0, 255, 0, 0.05) 100%);
+  --gradient-footer: linear-gradient(0deg, rgba(0, 255, 0, 0.1) 0%, rgba(0, 255, 0, 0.05) 100%);
+  
+  /* 扫描线效果 */
+  --scanline-color: rgba(0, 255, 0, 0.02);
+  
+  /* 文本阴影 */
+  --text-shadow-primary: 0 0 5px var(--glow-primary);
+  --text-shadow-secondary: 0 0 3px var(--glow-primary-soft);
+  --text-shadow-strong: 0 0 10px var(--glow-primary);
+  
+  /* Mac 风格按钮颜色 */
+  --mac-btn-close: rgba(255, 0, 0, 0.3);
+  --mac-btn-close-border: rgba(255, 0, 0, 0.5);
+  --mac-btn-minimize: rgba(255, 255, 0, 0.3);
+  --mac-btn-minimize-border: rgba(255, 255, 0, 0.5);
+  --mac-btn-maximize: rgba(0, 255, 0, 0.3);
+  --mac-btn-maximize-border: rgba(0, 255, 0, 0.5);
+  
+  /* 字体 */
+  --font-terminal: 'Courier New', monospace;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+#app {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
