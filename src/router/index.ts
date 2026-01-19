@@ -14,7 +14,7 @@ const router = createRouter({
       path: '/act-:hash',
       name: 'Act2',
       component: Act2,
-      beforeEnter: (to, from, next) => {
+      beforeEnter: (_to, from, next) => {
         // 简单验证：必须从第一幕跳转过来
         if (from.name === 'Act1') {
           next()
